@@ -17,6 +17,7 @@ public class ChatMessageEvent {
         this.sender = sender;
         this.messageType = messageType;
     }
+
     public String messageContent() {
         return message.getContent().getString();
     }

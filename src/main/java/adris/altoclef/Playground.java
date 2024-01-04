@@ -32,7 +32,6 @@ import adris.altoclef.util.*;
 import adris.altoclef.util.helpers.WorldHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.mob.GhastEntity;
 import net.minecraft.entity.mob.ZombieEntity;
@@ -46,7 +45,6 @@ import net.minecraft.world.chunk.EmptyChunk;
 
 import java.io.*;
 import java.util.List;
-import java.util.Optional;
 import java.util.Scanner;
 
 /**

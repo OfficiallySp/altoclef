@@ -42,10 +42,8 @@ public class WaitForDragonAndPearlTask extends Task implements IDragonWaiter {
     private static final int HEIGHT = 42; //Increase height because this too low
 
     private static final int CLOSE_ENOUGH_DISTANCE = 15;
-
-    private final int Y_COORDINATE = 75;
-
     private static final double DRAGON_FIREBALL_TOO_CLOSE_RANGE = 40;
+    private final int Y_COORDINATE = 75;
     private final Task _buildingMaterialsTask = new GetBuildingMaterialsTask(HEIGHT + 10);
     boolean inCenter;
     private Task _heightPillarTask;

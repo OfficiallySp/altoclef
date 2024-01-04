@@ -22,18 +22,12 @@ import java.util.List;
 public class ShootArrowSimpleProjectileTask extends Task {
 
     private final Entity target;
+    private final TimerGame shotTimer = new TimerGame(1);
     private boolean shooting = false;
     private boolean shot = false;
 
-    private final TimerGame shotTimer = new TimerGame(1);
-
     public ShootArrowSimpleProjectileTask(Entity target) {
         this.target = target;
-    }
-
-    @Override
-    protected void onStart(AltoClef mod) {
-        shooting = false;
     }
 
     private static Rotation calculateThrowLook(AltoClef mod, Entity target) {
@@ -74,6 +68,11 @@ public class ShootArrowSimpleProjectileTask extends Task {
     private static float Vec3dToYaw(AltoClef mod, Vec3d vec) {
         return (mod.getPlayer().getYaw() +
                 MathHelper.wrapDegrees((float) Math.toDegrees(Math.atan2(vec.getZ() - mod.getPlayer().getZ(), vec.getX() - mod.getPlayer().getX())) - 90f - mod.getPlayer().getYaw()));
+    }
+
+    @Override
+    protected void onStart(AltoClef mod) {
+        shooting = false;
     }
 
     @Override

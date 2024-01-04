@@ -519,8 +519,8 @@ public interface LookHelper {
     /**
      * Updates the player's look direction and rotation.
      *
-     * @param mod      The instance of AltoClef.
-     * @param rotation The desired rotation to look at.
+     * @param mod          The instance of AltoClef.
+     * @param rotation     The desired rotation to look at.
      * @param withBaritone Whether to use Baritone to look.
      */
     static void lookAt(AltoClef mod, Rotation rotation, boolean withBaritone) {
@@ -552,8 +552,8 @@ public interface LookHelper {
     /**
      * Adjusts the player's look direction to the specified target position.
      *
-     * @param mod    The AltoClef instance.
-     * @param toLook The position to look at.
+     * @param mod          The AltoClef instance.
+     * @param toLook       The position to look at.
      * @param withBaritone Whether to use Baritone to look.
      * @throws IllegalArgumentException if mod or toLook is null.
      */
@@ -585,9 +585,9 @@ public interface LookHelper {
     /**
      * Adjusts the player's view to look at a specific location from a specific direction.
      *
-     * @param mod    The AltoClef mod instance.
-     * @param toLook The position to look at.
-     * @param side   The direction to look from.
+     * @param mod          The AltoClef mod instance.
+     * @param toLook       The position to look at.
+     * @param side         The direction to look from.
      * @param withBaritone Whether to use Baritone to look.
      */
     static void lookAt(AltoClef mod, BlockPos toLook, Direction side, boolean withBaritone) {
@@ -646,8 +646,8 @@ public interface LookHelper {
     /**
      * Looks at the specified block position.
      *
-     * @param mod    The AltoClef instance.
-     * @param toLook The block position to look at.
+     * @param mod          The AltoClef instance.
+     * @param toLook       The block position to look at.
      * @param withBaritone Whether to use Baritone to look.
      */
     static void lookAt(AltoClef mod, BlockPos toLook, boolean withBaritone) {
